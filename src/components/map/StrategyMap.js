@@ -133,8 +133,8 @@ export default function StrategyMap({ points = [], userLocation = null, geofence
 		)
 	}
 
-	const tileUrl =
-		mapTheme === 'dark' ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png' : 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
+	const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+	const tileClass = mapTheme === 'dark' ? 'filter invert hue-rotate-180 brightness-75 contrast-125' : ''
 	const mapBgColor = mapTheme === 'dark' ? '#0b0b0b' : '#e5e7eb'
 	const primaryColor = mapTheme === 'dark' ? '#00eeff' : '#0055ff'
 	const userColor = '#00ff66' // Neon Green for the local user
@@ -146,7 +146,7 @@ export default function StrategyMap({ points = [], userLocation = null, geofence
 			style={{ backgroundColor: mapBgColor }}
 		>
 			<MapContainer center={currentCenter} zoom={17} style={{ height: '100%', width: '100%', background: 'transparent' }} zoomControl={false}>
-				<TileLayer url={tileUrl} />
+				<TileLayer url={tileUrl} className={tileClass} />
 
 				{geofence?.center_lat && (
 					<Circle
