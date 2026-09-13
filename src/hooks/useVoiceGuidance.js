@@ -50,8 +50,19 @@ export function useVoiceGuidance(guidance, isVoiceActive, language = 'hi-IN') {
 			}
 		}
 
-		// Map English and Hindi to Nalini, others to auto
-		const voice = (language === 'hi-IN' || language === 'en-IN') ? 'Nalini' : 'auto'
+		const voiceMap = {
+			'en-IN': 'Nalini',
+			'hi-IN': 'Nalini',
+			'ta-IN': 'Asmita',
+			'te-IN': 'Suhana',
+			'bn-IN': 'Kirra',
+			'gu-IN': 'Falak',
+			'kn-IN': 'Saanvi',
+			'ml-IN': 'Reshma',
+			'mr-IN': 'Zahira',
+			'pa-IN': 'Mehuli'
+		}
+		const voice = voiceMap[language] || 'auto'
 
 		const fetchTTS = async () => {
 			isSpeaking.current = true
