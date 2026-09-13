@@ -146,7 +146,7 @@ export default function StrategyMap({ points = [], userLocation = null, geofence
 			style={{ backgroundColor: mapBgColor }}
 		>
 			<MapContainer center={currentCenter} zoom={17} style={{ height: '100%', width: '100%', background: 'transparent' }} zoomControl={false}>
-				<TileLayer url={tileUrl} className={tileClass} />
+				<TileLayer key={mapTheme} url={tileUrl} className={tileClass} />
 
 				{geofence?.center_lat && (
 					<Circle
