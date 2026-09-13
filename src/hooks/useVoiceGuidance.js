@@ -1,8 +1,9 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import { translations } from './translations'
 
-export function useVoiceGuidance(guidance, isVoiceActive, voice = 'Nalini', language = 'hi-IN') {
+export function useVoiceGuidance(guidance, isVoiceActive, language = 'hi-IN') {
 	const audioRef = useRef(null)
 	const isSpeaking = useRef(false)
 
@@ -33,21 +34,28 @@ export function useVoiceGuidance(guidance, isVoiceActive, voice = 'Nalini', lang
 		if (isSpeaking.current) return
 
 		let textToSpeak = `${guidance.message}. ${guidance.suggestion}`
+		const tl = language.split('-')[0]
+
+		if (tl !== 'en' && translations[tl]) {
+			const dict = translations[tl]
+			if (guidance.suggestion.includes('Divert')) {
+				const parts = guidance.suggestion.split(' ')
+				const angle = parts[1].replace('°', '')
+				const side = parts[2]
+				const prefix = dict[`${guidance.message}. Divert`]
+				const suffix = dict[`degrees ${side}.`]
+				textToSpeak = `${prefix} ${angle} ${suffix}`
+			} else {
+				textToSpeak = dict[textToSpeak] || textToSpeak
+			}
+		}
+
+		// Map English and Hindi to Nalini, others to auto
+		const voice = (language === 'hi-IN' || language === 'en-IN') ? 'Nalini' : 'auto'
 
 		const fetchTTS = async () => {
 			isSpeaking.current = true
 			try {
-				if (language !== 'en-IN') {
-					const tl = language.split('-')[0] // extract 'hi', 'ta', etc.
-					const transRes = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${tl}&dt=t&q=${encodeURIComponent(textToSpeak)}`)
-					if (transRes.ok) {
-						const data = await transRes.json()
-						if (data && data[0]) {
-							textToSpeak = data[0].map(item => item[0]).join(' ')
-						}
-					}
-				}
-
 				const response = await fetch('https://api.vachana.ai/api/v1/tts/inference', {
 					method: 'POST',
 					headers: {
@@ -104,5 +112,5 @@ export function useVoiceGuidance(guidance, isVoiceActive, voice = 'Nalini', lang
 		}
 
 		fetchTTS()
-	}, [guidance, isVoiceActive, voice, language])
+	}, [guidance, isVoiceActive, language])
 }

@@ -1,0 +1,92 @@
+export const translations = {
+  "hi": {
+    "SECTOR CLEAR. Proceed on current line.": "सेक्टर साफ़. वर्तमान लाइन पर आगे बढ़ें.",
+    "CRITICAL CONGESTION AHEAD. Divert": "आगे गंभीर भीड़भाड़ है। डाइवर्ट",
+    "MODERATE TRAFFIC DETECTED. Divert": "मध्यम यातायात का पता चला। डाइवर्ट",
+    "DENSE AREA DETECTED OFF-AXIS. Maintain heading with caution.": "धुरी से दूर सघन क्षेत्र का पता चला। सावधानी से आगे बढ़ें.",
+    "FORWARD PATH CLEAR. Maintain current speed and heading.": "आगे का रास्ता साफ़. वर्तमान गति और दिशा बनाए रखें.",
+    "degrees LEFT.": "डिग्री बाएँ।",
+    "degrees RIGHT.": "डिग्री सही."
+  },
+  "ta": {
+    "SECTOR CLEAR. Proceed on current line.": "துறை தெளிவானது. நடப்பு வரியில் தொடரவும்.",
+    "CRITICAL CONGESTION AHEAD. Divert": "நெருக்கடியான நெரிசல் முன்னால். திசை திருப்பவும்",
+    "MODERATE TRAFFIC DETECTED. Divert": "மிதமான போக்குவரத்து கண்டறியப்பட்டது. திசை திருப்பவும்",
+    "DENSE AREA DETECTED OFF-AXIS. Maintain heading with caution.": "அடர்த்தியான பகுதி ஆஃப்-ஆக்ஸிஸ் கண்டறியப்பட்டது. எச்சரிக்கையுடன் தலைப்பைப் பராமரிக்கவும்.",
+    "FORWARD PATH CLEAR. Maintain current speed and heading.": "முன்னோக்கி பாதை தெளிவானது. தற்போதைய வேகம் மற்றும் தலைப்பைப் பராமரிக்கவும்.",
+    "degrees LEFT.": "டிகிரி இடது.",
+    "degrees RIGHT.": "டிகிரி RIGHT."
+  },
+  "te": {
+    "SECTOR CLEAR. Proceed on current line.": "సెక్టార్ క్లియర్. ప్రస్తుత లైన్‌లో కొనసాగండి.",
+    "CRITICAL CONGESTION AHEAD. Divert": "మున్ముందు క్రిటికల్ రద్దీ. దారి మళ్లించండి",
+    "MODERATE TRAFFIC DETECTED. Divert": "మోడరేట్ ట్రాఫిక్ గుర్తించబడింది. దారి మళ్లించండి",
+    "DENSE AREA DETECTED OFF-AXIS. Maintain heading with caution.": "దట్టమైన ప్రాంతం ఆఫ్-యాక్సిస్ గుర్తించబడింది. హెడ్డింగ్‌ను జాగ్రత్తగా నిర్వహించండి.",
+    "FORWARD PATH CLEAR. Maintain current speed and heading.": "ఫార్వర్డ్ పాత్ క్లియర్. ప్రస్తుత వేగం మరియు శీర్షికను నిర్వహించండి.",
+    "degrees LEFT.": "డిగ్రీలు ఎడమ.",
+    "degrees RIGHT.": "డిగ్రీలు RIGHT."
+  },
+  "kn": {
+    "SECTOR CLEAR. Proceed on current line.": "ಸೆಕ್ಟರ್ ಕ್ಲಿಯರ್. ಪ್ರಸ್ತುತ ಸಾಲಿನಲ್ಲಿ ಮುಂದುವರಿಯಿರಿ.",
+    "CRITICAL CONGESTION AHEAD. Divert": "ಮುಂದೆ ಕ್ರಿಟಿಕಲ್ ದಟ್ಟಣೆ. ತಿರುಗಿಸಿ",
+    "MODERATE TRAFFIC DETECTED. Divert": "ಮಧ್ಯಮ ಟ್ರಾಫಿಕ್ ಪತ್ತೆಯಾಗಿದೆ. ತಿರುಗಿಸಿ",
+    "DENSE AREA DETECTED OFF-AXIS. Maintain heading with caution.": "ದಟ್ಟವಾದ ಪ್ರದೇಶವನ್ನು ಆಫ್-ಆಕ್ಸಿಸ್ ಪತ್ತೆ ಮಾಡಲಾಗಿದೆ. ಎಚ್ಚರಿಕೆಯಿಂದ ಶಿರೋನಾಮೆ ನಿರ್ವಹಿಸಿ.",
+    "FORWARD PATH CLEAR. Maintain current speed and heading.": "ಫಾರ್ವರ್ಡ್ ಪಾತ್ ಕ್ಲಿಯರ್. ಪ್ರಸ್ತುತ ವೇಗ ಮತ್ತು ಶಿರೋನಾಮೆಯನ್ನು ನಿರ್ವಹಿಸಿ.",
+    "degrees LEFT.": "ಡಿಗ್ರಿ ಎಡಕ್ಕೆ.",
+    "degrees RIGHT.": "ಡಿಗ್ರಿಗಳು ಬಲ."
+  },
+  "ml": {
+    "SECTOR CLEAR. Proceed on current line.": "സെക്ടർ ക്ലിയർ. നിലവിലെ ലൈനിൽ തുടരുക.",
+    "CRITICAL CONGESTION AHEAD. Divert": "മുന്നിൽ ഗുരുതരമായ തിരക്ക്. വഴിതിരിച്ചുവിടുക",
+    "MODERATE TRAFFIC DETECTED. Divert": "മിതമായ ഗതാഗതം കണ്ടെത്തി. വഴിതിരിച്ചുവിടുക",
+    "DENSE AREA DETECTED OFF-AXIS. Maintain heading with caution.": "ഇടതൂർന്ന പ്രദേശം ഓഫ് ആക്‌സിസ് കണ്ടെത്തി. തലക്കെട്ട് ജാഗ്രതയോടെ സൂക്ഷിക്കുക.",
+    "FORWARD PATH CLEAR. Maintain current speed and heading.": "മുന്നോട്ടുള്ള പാത ക്ലിയർ. നിലവിലെ വേഗതയും തലക്കെട്ടും നിലനിർത്തുക.",
+    "degrees LEFT.": "ഡിഗ്രി ഇടത്.",
+    "degrees RIGHT.": "ഡിഗ്രികൾ RIGHT."
+  },
+  "mr": {
+    "SECTOR CLEAR. Proceed on current line.": "सेक्टर क्लियर. चालू ओळीवर पुढे जा.",
+    "CRITICAL CONGESTION AHEAD. Divert": "पुढे गंभीर गर्दी. वळवा",
+    "MODERATE TRAFFIC DETECTED. Divert": "मध्यम रहदारी आढळली. वळवा",
+    "DENSE AREA DETECTED OFF-AXIS. Maintain heading with caution.": "दाट क्षेत्र आढळले ऑफ-एक्सिस. सावधगिरीने हेडिंग ठेवा.",
+    "FORWARD PATH CLEAR. Maintain current speed and heading.": "पुढे मार्ग मोकळा. सध्याचा वेग आणि हेडिंग कायम ठेवा.",
+    "degrees LEFT.": "अंश डावीकडे.",
+    "degrees RIGHT.": "अंश उजवीकडे."
+  },
+  "pa": {
+    "SECTOR CLEAR. Proceed on current line.": "ਸੈਕਟਰ ਕਲੀਅਰ। ਮੌਜੂਦਾ ਲਾਈਨ 'ਤੇ ਅੱਗੇ ਵਧੋ।",
+    "CRITICAL CONGESTION AHEAD. Divert": "ਅੱਗੇ ਗੰਭੀਰ ਭੀੜ। ਮੋੜੋ",
+    "MODERATE TRAFFIC DETECTED. Divert": "ਦਰਮਿਆਨੀ ਆਵਾਜਾਈ ਦਾ ਪਤਾ ਲਗਾਇਆ ਗਿਆ। ਮੋੜੋ",
+    "DENSE AREA DETECTED OFF-AXIS. Maintain heading with caution.": "ਸੰਘਣਾ ਖੇਤਰ ਖੋਜਿਆ ਗਿਆ ਬੰਦ-ਧੁਰੀ। ਸਿਰਲੇਖ ਨੂੰ ਸਾਵਧਾਨੀ ਨਾਲ ਰੱਖੋ।",
+    "FORWARD PATH CLEAR. Maintain current speed and heading.": "ਅੱਗੇ ਪਾਥ ਸਾਫ਼। ਮੌਜੂਦਾ ਗਤੀ ਅਤੇ ਸਿਰਲੇਖ ਨੂੰ ਬਣਾਈ ਰੱਖੋ।",
+    "degrees LEFT.": "ਡਿਗਰੀ ਖੱਬੇ।",
+    "degrees RIGHT.": "ਡਿਗਰੀ ਸੱਜੇ।"
+  },
+  "bn": {
+    "SECTOR CLEAR. Proceed on current line.": "সেক্টর ক্লিয়ার। বর্তমান লাইনে এগিয়ে যান।",
+    "CRITICAL CONGESTION AHEAD. Divert": "সামনে ক্রিটিক্যাল কনজেশন। ডাইভার্ট",
+    "MODERATE TRAFFIC DETECTED. Divert": "মাঝারি ট্রাফিক সনাক্ত করা হয়েছে. ডাইভার্ট",
+    "DENSE AREA DETECTED OFF-AXIS. Maintain heading with caution.": "বন্ধ-অক্ষে ঘন এলাকা সনাক্ত করা হয়েছে। সাবধানতার সাথে শিরোনাম বজায় রাখুন।",
+    "FORWARD PATH CLEAR. Maintain current speed and heading.": "সামনের পথ পরিষ্কার। বর্তমান গতি এবং শিরোনাম বজায় রাখুন।",
+    "degrees LEFT.": "ডিগ্রী বাম",
+    "degrees RIGHT.": "ডিগ্রী ডান."
+  },
+  "gu": {
+    "SECTOR CLEAR. Proceed on current line.": "સેક્ટર ક્લિયર. વર્તમાન લાઇન પર આગળ વધો.",
+    "CRITICAL CONGESTION AHEAD. Divert": "આગળ જટિલ ભીડ. ડાયવર્ટ કરો",
+    "MODERATE TRAFFIC DETECTED. Divert": "મધ્યમ ટ્રાફિક જણાયો. ડાયવર્ટ કરો",
+    "DENSE AREA DETECTED OFF-AXIS. Maintain heading with caution.": "બંધ-અક્ષથી ગીચ વિસ્તાર શોધાયો. સાવધાની સાથે મથાળું જાળવો.",
+    "FORWARD PATH CLEAR. Maintain current speed and heading.": "આગળનો રસ્તો સાફ કરો. વર્તમાન ગતિ અને હેડિંગ જાળવી રાખો.",
+    "degrees LEFT.": "ડિગ્રી ડાબી.",
+    "degrees RIGHT.": "ડિગ્રી અધિકાર."
+  },
+  "en": {
+    "SECTOR CLEAR. Proceed on current line.": "SECTOR CLEAR. Proceed on current line.",
+    "CRITICAL CONGESTION AHEAD. Divert": "CRITICAL CONGESTION AHEAD. Divert",
+    "MODERATE TRAFFIC DETECTED. Divert": "MODERATE TRAFFIC DETECTED. Divert",
+    "DENSE AREA DETECTED OFF-AXIS. Maintain heading with caution.": "DENSE AREA DETECTED OFF-AXIS. Maintain heading with caution.",
+    "FORWARD PATH CLEAR. Maintain current speed and heading.": "FORWARD PATH CLEAR. Maintain current speed and heading.",
+    "degrees LEFT.": "degrees LEFT.",
+    "degrees RIGHT.": "degrees RIGHT."
+  }
+};

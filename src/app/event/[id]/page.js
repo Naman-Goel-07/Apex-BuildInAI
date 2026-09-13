@@ -50,9 +50,8 @@ export default function EventCockpitPage() {
 
 	// 5. VOICE GUIDANCE
 	const [isVoiceActive, setIsVoiceActive] = useState(false)
-	const [voice, setVoice] = useState('Nalini')
 	const [language, setLanguage] = useState('en-IN')
-	useVoiceGuidance(guidance, isVoiceActive, voice, language)
+	useVoiceGuidance(guidance, isVoiceActive, language)
 
 	return (
 		<main className={styles.pageWrapper}>
@@ -167,17 +166,6 @@ export default function EventCockpitPage() {
 								<option value="pa-IN">Punjabi</option>
 								<option value="bn-IN">Bengali</option>
 								<option value="gu-IN">Gujarati</option>
-							</select>
-
-							<select
-								value={voice}
-								onChange={(e) => setVoice(e.target.value)}
-								className="bg-[#1a1a1a] text-[#8892a4] border border-[#333] rounded text-[9px] px-1 py-1 outline-none"
-							>
-								<option value="Nalini">Nalini</option>
-								<option value="Kaveri">Kaveri</option>
-								<option value="Deepak">Deepak</option>
-								<option value="Poorvi">Poorvi</option>
 							</select>
 
 							{/* 🎤 Voice Toggle Button */}
