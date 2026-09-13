@@ -2,70 +2,58 @@
 
 import { useEffect, useRef } from 'react'
 
-function toNaturalSpeech(suggestion) {
-	if (!suggestion) return null
-
-	if (suggestion === 'Proceed on current line') {
-		return 'You are on the correct path. Keep moving forward.'
-	}
-
-	if (suggestion === 'Maintain current speed and heading') {
-		return 'Continue moving straight at the same speed.'
-	}
-
-	if (suggestion === 'Maintain heading with caution') {
-		return 'Continue forward but stay alert.'
-	}
-
-	// "Divert X° LEFT" or "Divert X° RIGHT"
-	const divertMatch = suggestion.match(/Divert\s+(\d+)°\s+(LEFT|RIGHT)/i)
-	if (divertMatch) {
-		const degrees = divertMatch[1]
-		const direction = divertMatch[2].toLowerCase()
-		return `Turn ${direction} by ${degrees} degrees.`
-	}
-
-	// Fallback: Speak the raw suggestion as-is
-	return suggestion
-}
-
-export function useVoiceGuidance(suggestion, isActive) {
-	const lastSpokenRef = useRef(null)
-	const timeoutRef = useRef(null)
+export function useVoiceGuidance(guidance, isVoiceActive) {
+	const audioRef = useRef(null)
 
 	useEffect(() => {
-		if (typeof window === 'undefined' || !window.speechSynthesis) return
+		if (typeof window === 'undefined') return
+		if (!isVoiceActive || !guidance || guidance.severity === 'low') return
 
-		// Clear any pending debounced speech on every run
-		clearTimeout(timeoutRef.current)
+		const textToSpeak = `${guidance.message}. ${guidance.suggestion}`
 
-		if (!isActive) {
-			window.speechSynthesis.cancel()
-			return
+		const fetchTTS = async () => {
+			try {
+				const response = await fetch('https://api.gnani.ai/tts', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+						'gnani-apikey': process.env.NEXT_PUBLIC_GNANI_API_KEY
+					},
+					body: JSON.stringify({ text: textToSpeak })
+				})
+
+				if (!response.ok) throw new Error('Gnani TTS error')
+
+				const arrayBuffer = await response.arrayBuffer()
+				const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' })
+				const url = URL.createObjectURL(blob)
+
+				if (audioRef.current) {
+					audioRef.current.pause()
+					URL.revokeObjectURL(audioRef.current.src)
+				}
+
+				const audio = new Audio(url)
+				audioRef.current = audio
+				audio.play().catch((e) => console.error('Audio play blocked:', e))
+
+				audio.onended = () => {
+					URL.revokeObjectURL(url)
+				}
+			} catch (error) {
+				console.error('Error fetching TTS:', error)
+			}
 		}
 
-		if (suggestion && suggestion !== lastSpokenRef.current) {
-			// Debounce: wait 400ms before speaking in case suggestion changes rapidly
-			timeoutRef.current = setTimeout(() => {
-				const naturalText = toNaturalSpeech(suggestion)
-				if (!naturalText) return
-
-				window.speechSynthesis.cancel()
-
-				const utterance = new SpeechSynthesisUtterance(naturalText)
-				utterance.lang = 'en-US'
-				utterance.rate = 0.9
-				utterance.pitch = 1
-
-				window.speechSynthesis.speak(utterance)
-
-				lastSpokenRef.current = suggestion
-			}, 400)
-		}
+		fetchTTS()
 
 		return () => {
-			clearTimeout(timeoutRef.current)
-			window.speechSynthesis.cancel()
+			if (audioRef.current) {
+				audioRef.current.pause()
+				if (audioRef.current.src) {
+					URL.revokeObjectURL(audioRef.current.src)
+				}
+			}
 		}
-	}, [suggestion, isActive])
+	}, [guidance, isVoiceActive])
 }

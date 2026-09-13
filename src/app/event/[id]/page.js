@@ -50,7 +50,7 @@ export default function EventCockpitPage() {
 
 	// 5. VOICE GUIDANCE
 	const [isVoiceActive, setIsVoiceActive] = useState(false)
-	useVoiceGuidance(guidance.suggestion, isVoiceActive)
+	useVoiceGuidance(guidance, isVoiceActive)
 
 	return (
 		<main className={styles.pageWrapper}>
