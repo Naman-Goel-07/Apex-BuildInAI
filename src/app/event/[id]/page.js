@@ -50,7 +50,9 @@ export default function EventCockpitPage() {
 
 	// 5. VOICE GUIDANCE
 	const [isVoiceActive, setIsVoiceActive] = useState(false)
-	useVoiceGuidance(guidance, isVoiceActive)
+	const [voice, setVoice] = useState('Nalini')
+	const [language, setLanguage] = useState('en-IN')
+	useVoiceGuidance(guidance, isVoiceActive, voice, language)
 
 	return (
 		<main className={styles.pageWrapper}>
@@ -149,30 +151,60 @@ export default function EventCockpitPage() {
 							{guidance.message}
 						</div>
 
-						{/* 🎤 Voice Toggle Button */}
-						<button
-							onClick={() => {
-							const next = !isVoiceActive
-							if (typeof window !== 'undefined' && window.speechSynthesis) {
-								window.speechSynthesis.cancel()
-								const feedback = new SpeechSynthesisUtterance(
-									next ? 'Voice guidance activated' : 'Voice guidance disabled'
-								)
-								feedback.lang = 'en-US'
-								feedback.rate = 0.9
-								window.speechSynthesis.speak(feedback)
-							}
-							setIsVoiceActive(next)
-						}}
-							className={`flex items-center gap-1.5 px-3 py-1 rounded-full border text-[9px] uppercase tracking-widest font-mono transition-all active:scale-95 ${
-								isVoiceActive
-									? 'bg-[#00eeff]/10 border-[#00eeff] text-[#00eeff]'
-									: 'bg-[#1a1a1a] border-[#333] text-[#555] hover:border-[#00eeff]/40 hover:text-[#8892a4]'
-							}`}
-						>
-							<span className={isVoiceActive ? 'animate-pulse' : ''}>🎤</span>
-							{isVoiceActive ? 'VOICE ON' : 'VOICE OFF'}
-						</button>
+						<div className="flex items-center gap-2">
+							<select
+								value={language}
+								onChange={(e) => setLanguage(e.target.value)}
+								className="bg-[#1a1a1a] text-[#8892a4] border border-[#333] rounded text-[9px] px-1 py-1 outline-none"
+							>
+								<option value="en-IN">English (India)</option>
+								<option value="hi-IN">Hindi</option>
+								<option value="ta-IN">Tamil</option>
+								<option value="te-IN">Telugu</option>
+								<option value="kn-IN">Kannada</option>
+								<option value="ml-IN">Malayalam</option>
+								<option value="mr-IN">Marathi</option>
+								<option value="pa-IN">Punjabi</option>
+								<option value="bn-IN">Bengali</option>
+								<option value="gu-IN">Gujarati</option>
+							</select>
+
+							<select
+								value={voice}
+								onChange={(e) => setVoice(e.target.value)}
+								className="bg-[#1a1a1a] text-[#8892a4] border border-[#333] rounded text-[9px] px-1 py-1 outline-none"
+							>
+								<option value="Nalini">Nalini</option>
+								<option value="Kaveri">Kaveri</option>
+								<option value="Deepak">Deepak</option>
+								<option value="Poorvi">Poorvi</option>
+							</select>
+
+							{/* 🎤 Voice Toggle Button */}
+							<button
+								onClick={() => {
+									const next = !isVoiceActive
+									if (typeof window !== 'undefined' && window.speechSynthesis) {
+										window.speechSynthesis.cancel()
+										const feedback = new SpeechSynthesisUtterance(
+											next ? 'Voice guidance activated' : 'Voice guidance disabled'
+										)
+										feedback.lang = 'en-US'
+										feedback.rate = 0.9
+										window.speechSynthesis.speak(feedback)
+									}
+									setIsVoiceActive(next)
+								}}
+								className={`flex items-center gap-1.5 px-3 py-1 rounded-full border text-[9px] uppercase tracking-widest font-mono transition-all active:scale-95 ${
+									isVoiceActive
+										? 'bg-[#00eeff]/10 border-[#00eeff] text-[#00eeff]'
+										: 'bg-[#1a1a1a] border-[#333] text-[#555] hover:border-[#00eeff]/40 hover:text-[#8892a4]'
+								}`}
+							>
+								<span className={isVoiceActive ? 'animate-pulse' : ''}>🎤</span>
+								{isVoiceActive ? 'VOICE ON' : 'VOICE OFF'}
+							</button>
+						</div>
 					</div>
 
 					<div className="text-lg font-bold font-display uppercase tracking-tight text-white/90">{guidance.suggestion}</div>

@@ -1,0 +1,279 @@
+model
+timbre-v2.5
+language
+speed
+<span class="line"><span>WSS wss://api.vachana.ai/api/v1/tts</span></span>
+<span class="line"><span></span></span>
+X-API-Key-ID
+/api/v1/tts
+text
+voice
+model
+audio_config
+is_final: true
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">{</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">  &quot;text&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;नमस्ते, आप कैसे हैं?&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">  &quot;voice&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;Nalini&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">  &quot;model&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;timbre-v2.5&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">  &quot;language&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;hi-IN&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">  &quot;speed&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0550AE;--shiki-dark:#B5CEA8">1.0</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">  &quot;audio_config&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: {</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">    &quot;sample_rate&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0550AE;--shiki-dark:#B5CEA8">48000</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">    &quot;num_channels&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0550AE;--shiki-dark:#B5CEA8">1</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">    &quot;sample_width&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0550AE;--shiki-dark:#B5CEA8">2</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">    &quot;encoding&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;linear_pcm&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">    &quot;container&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;wav&quot;</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">  }</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">}</span></span>
+
+timbre-v2.5
+Nalini
+Kaveri
+Deepak
+auto
+hi-IN
+en-IN
+ta-IN
+te-IN
+kn-IN
+ml-IN
+mr-IN
+pa-IN
+bn-IN
+gu-IN
+hi-en
+0.85
+1.15
+&quot;slow&quot;
+&quot;medium&quot;
+&quot;fast&quot;
+8000
+16000
+22050
+24000
+44100
+48000
+1
+2
+linear_pcm
+pcm_s16le
+pcm_mulaw
+pcm_alaw
+oggopus
+container=mulaw
+container=alaw
+oggopus
+container=ogg
+container
+mp3
+wav
+raw
+mp3
+ogg
+mulaw
+alaw
+ogg
+mulaw
+alaw
+container
+mp3
+32k
+64k
+96k
+128k
+192k
+container
+encoding
+sample_rate
+bitrate
+wav
+linear_pcm
+audio/wav
+raw
+linear_pcm
+application/octet-stream
+mp3
+32k
+192k
+audio/mpeg
+ogg
+audio/ogg
+mulaw
+audio/basic
+alaw
+audio/alaw
+container
+container
+encoding
+raw
+pcm_mulaw
+container=mulaw
+raw
+pcm_alaw
+container=alaw
+raw
+ogg
+oggopus
+container=ogg
+bitrate
+container=mp3
+container=mulaw
+alaw
+sample_rate
+container=ogg
+encoding=oggopus
+start
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">{ </span><span style="color:#116329;--shiki-dark:#9CDCFE">&quot;type&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;start&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, </span><span style="color:#116329;--shiki-dark:#9CDCFE">&quot;message&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;Streaming started&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, </span><span style="color:#116329;--shiki-dark:#9CDCFE">&quot;request_id&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;req_abc123&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> }</span></span>
+
+audio
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">{</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">  &quot;type&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;audio&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">  &quot;data&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: {</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">    &quot;chunk_index&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0550AE;--shiki-dark:#B5CEA8">1</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">    &quot;audio&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;&lt;base64-encoded audio bytes&gt;&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">    &quot;is_final&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0550AE;--shiki-dark:#569CD6">false</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">  }</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">}</span></span>
+
+complete
+is_final
+true
+audio
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">{</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">  &quot;type&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;complete&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">  &quot;data&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: {</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">    &quot;chunk_index&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0550AE;--shiki-dark:#B5CEA8">12</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">    &quot;audio&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#116329;--shiki-dark:#9CDCFE">    &quot;is_final&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0550AE;--shiki-dark:#569CD6">true</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">  }</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">}</span></span>
+
+error
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">{ </span><span style="color:#116329;--shiki-dark:#9CDCFE">&quot;type&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;error&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, </span><span style="color:#116329;--shiki-dark:#9CDCFE">&quot;message&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;Invalid text or audio configuration.&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> }</span></span>
+
+<span class="line"><span style="color:#CF222E;--shiki-dark:#569CD6">const</span><span style="color:#0550AE;--shiki-dark:#4FC1FF"> ws</span><span style="color:#CF222E;--shiki-dark:#D4D4D4"> =</span><span style="color:#CF222E;--shiki-dark:#569CD6"> new</span><span style="color:#8250DF;--shiki-dark:#DCDCAA"> WebSocket</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;wss://api.vachana.ai/api/v1/tts&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, {</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">  headers:</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> {</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">    &quot;Content-Type&quot;</span><span style="color:#1F2328;--shiki-dark:#9CDCFE">:</span><span style="color:#0A3069;--shiki-dark:#CE9178"> &quot;application/json&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">    &quot;X-API-Key-ID&quot;</span><span style="color:#1F2328;--shiki-dark:#9CDCFE">:</span><span style="color:#0A3069;--shiki-dark:#CE9178"> &quot;&lt;your-api-key&gt;&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">  },</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">});</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">ws</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#8250DF;--shiki-dark:#DCDCAA">on</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;open&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, () </span><span style="color:#CF222E;--shiki-dark:#569CD6">=&gt;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> {</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">  ws</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#8250DF;--shiki-dark:#DCDCAA">send</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#0550AE;--shiki-dark:#4FC1FF">JSON</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#8250DF;--shiki-dark:#DCDCAA">stringify</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">({</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">    text:</span><span style="color:#0A3069;--shiki-dark:#CE9178"> &quot;नमस्ते, आप कैसे हैं?&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">    voice:</span><span style="color:#0A3069;--shiki-dark:#CE9178"> &quot;Nalini&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">    model:</span><span style="color:#0A3069;--shiki-dark:#CE9178"> &quot;timbre-v2.5&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">    language:</span><span style="color:#0A3069;--shiki-dark:#CE9178"> &quot;hi-IN&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">    speed:</span><span style="color:#0550AE;--shiki-dark:#B5CEA8"> 1.0</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">    audio_config:</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> {</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">      sample_rate:</span><span style="color:#0550AE;--shiki-dark:#B5CEA8"> 48000</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">      num_channels:</span><span style="color:#0550AE;--shiki-dark:#B5CEA8"> 1</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">      sample_width:</span><span style="color:#0550AE;--shiki-dark:#B5CEA8"> 2</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">      encoding:</span><span style="color:#0A3069;--shiki-dark:#CE9178"> &quot;linear_pcm&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">      container:</span><span style="color:#0A3069;--shiki-dark:#CE9178"> &quot;wav&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">    },</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">  }));</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">});</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">ws</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#8250DF;--shiki-dark:#DCDCAA">on</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;message&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, (</span><span style="color:#953800;--shiki-dark:#9CDCFE">data</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">) </span><span style="color:#CF222E;--shiki-dark:#569CD6">=&gt;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> {</span></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#569CD6">  const</span><span style="color:#0550AE;--shiki-dark:#4FC1FF"> msg</span><span style="color:#CF222E;--shiki-dark:#D4D4D4"> =</span><span style="color:#0550AE;--shiki-dark:#4FC1FF"> JSON</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#8250DF;--shiki-dark:#DCDCAA">parse</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#1F2328;--shiki-dark:#9CDCFE">data</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">);</span></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">  if</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> (</span><span style="color:#1F2328;--shiki-dark:#9CDCFE">msg</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#1F2328;--shiki-dark:#9CDCFE">type</span><span style="color:#CF222E;--shiki-dark:#D4D4D4"> ===</span><span style="color:#0A3069;--shiki-dark:#CE9178"> &quot;audio&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">) {</span></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#569CD6">    const</span><span style="color:#0550AE;--shiki-dark:#4FC1FF"> chunk</span><span style="color:#CF222E;--shiki-dark:#D4D4D4"> =</span><span style="color:#1F2328;--shiki-dark:#9CDCFE"> Buffer</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#8250DF;--shiki-dark:#DCDCAA">from</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#1F2328;--shiki-dark:#9CDCFE">msg</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#1F2328;--shiki-dark:#9CDCFE">data</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#1F2328;--shiki-dark:#9CDCFE">audio</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;base64&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">);</span></span>
+<span class="line"><span style="color:#6E7781;--shiki-dark:#6A9955">    // append chunk to your audio buffer</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">  }</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">});</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">ws</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#8250DF;--shiki-dark:#DCDCAA">on</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;error&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, (</span><span style="color:#953800;--shiki-dark:#9CDCFE">error</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">) </span><span style="color:#CF222E;--shiki-dark:#569CD6">=&gt;</span><span style="color:#1F2328;--shiki-dark:#9CDCFE"> console</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#8250DF;--shiki-dark:#DCDCAA">error</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;WebSocket error:&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, </span><span style="color:#1F2328;--shiki-dark:#9CDCFE">error</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">));</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#9CDCFE">ws</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#8250DF;--shiki-dark:#DCDCAA">on</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;close&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, () </span><span style="color:#CF222E;--shiki-dark:#569CD6">=&gt;</span><span style="color:#1F2328;--shiki-dark:#9CDCFE"> console</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">.</span><span style="color:#8250DF;--shiki-dark:#DCDCAA">log</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;Connection closed&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">));</span></span>
+
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">import</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> websocket, json, base64</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#569CD6">def</span><span style="color:#8250DF;--shiki-dark:#DCDCAA"> on_message</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#1F2328;--shiki-dark:#9CDCFE">ws</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, </span><span style="color:#1F2328;--shiki-dark:#9CDCFE">message</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">):</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">    msg </span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> json.loads(message)</span></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">    if</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> msg.get(</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;type&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">) </span><span style="color:#CF222E;--shiki-dark:#D4D4D4">==</span><span style="color:#0A3069;--shiki-dark:#CE9178"> &quot;audio&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">:</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">        chunk </span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> base64.b64decode(msg[</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;data&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">][</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;audio&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">])</span></span>
+<span class="line"><span style="color:#6E7781;--shiki-dark:#6A9955">        # append chunk to your audio buffer</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#569CD6">def</span><span style="color:#8250DF;--shiki-dark:#DCDCAA"> on_error</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#1F2328;--shiki-dark:#9CDCFE">ws</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, </span><span style="color:#1F2328;--shiki-dark:#9CDCFE">error</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">):</span></span>
+<span class="line"><span style="color:#0550AE;--shiki-dark:#DCDCAA">    print</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#CF222E;--shiki-dark:#569CD6">f</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;Error: </span><span style="color:#CF222E;--shiki-dark:#569CD6">{</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">error</span><span style="color:#CF222E;--shiki-dark:#569CD6">}</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#569CD6">def</span><span style="color:#8250DF;--shiki-dark:#DCDCAA"> on_close</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#1F2328;--shiki-dark:#9CDCFE">ws</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, </span><span style="color:#1F2328;--shiki-dark:#9CDCFE">close_status_code</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, </span><span style="color:#1F2328;--shiki-dark:#9CDCFE">close_msg</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">):</span></span>
+<span class="line"><span style="color:#0550AE;--shiki-dark:#DCDCAA">    print</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;Connection closed&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#569CD6">def</span><span style="color:#8250DF;--shiki-dark:#DCDCAA"> on_open</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#1F2328;--shiki-dark:#9CDCFE">ws</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">):</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">    ws.send(json.dumps({</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">        &quot;text&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;नमस्ते, आप कैसे हैं?&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">        &quot;voice&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;Nalini&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">        &quot;model&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;timbre-v2.5&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">        &quot;language&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;hi-IN&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">        &quot;speed&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0550AE;--shiki-dark:#B5CEA8">1.0</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">        &quot;audio_config&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: {</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">            &quot;sample_rate&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0550AE;--shiki-dark:#B5CEA8">48000</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">            &quot;num_channels&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0550AE;--shiki-dark:#B5CEA8">1</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">            &quot;sample_width&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0550AE;--shiki-dark:#B5CEA8">2</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">            &quot;encoding&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;linear_pcm&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">            &quot;container&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;wav&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">        },</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">    }))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">ws </span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> websocket.WebSocketApp(</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">    &quot;wss://api.vachana.ai/api/v1/tts&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#953800;--shiki-dark:#9CDCFE">    header</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">{</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">        &quot;Content-Type&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;application/json&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">        &quot;X-API-Key-ID&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">: </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;&lt;your-api-key&gt;&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">    },</span></span>
+<span class="line"><span style="color:#953800;--shiki-dark:#9CDCFE">    on_open</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">on_open,</span></span>
+<span class="line"><span style="color:#953800;--shiki-dark:#9CDCFE">    on_message</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">on_message,</span></span>
+<span class="line"><span style="color:#953800;--shiki-dark:#9CDCFE">    on_error</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">on_error,</span></span>
+<span class="line"><span style="color:#953800;--shiki-dark:#9CDCFE">    on_close</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">on_close,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">ws.run_forever()</span></span>
+
+Nalini
+Kaveri
+Deepak
+Poorvi
+<span class="line"><span style="color:#953800;--shiki-dark:#DCDCAA">pip</span><span style="color:#0A3069;--shiki-dark:#CE9178"> install</span><span style="color:#0A3069;--shiki-dark:#CE9178"> gnani-vachana</span></span>
+
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">from</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> gnani.tts </span><span style="color:#CF222E;--shiki-dark:#C586C0">import</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> GnaniTTSRealtimeClient</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">client </span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> GnaniTTSRealtimeClient(</span><span style="color:#953800;--shiki-dark:#9CDCFE">api_key</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;your-api-key&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">)</span></span>
+
+<span class="line"><span style="color:#CF222E;--shiki-dark:#569CD6">export</span><span style="color:#1F2328;--shiki-dark:#9CDCFE"> GNANI_API_KEY</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;your-api-key&quot;</span></span>
+
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">from</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> gnani.tts </span><span style="color:#CF222E;--shiki-dark:#C586C0">import</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> GnaniTTSRealtimeClient</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">client </span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> GnaniTTSRealtimeClient()</span></span>
+
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">import</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> asyncio</span></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">from</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> gnani.tts </span><span style="color:#CF222E;--shiki-dark:#C586C0">import</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> GnaniTTSRealtimeClient</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#569CD6">async</span><span style="color:#CF222E;--shiki-dark:#569CD6"> def</span><span style="color:#8250DF;--shiki-dark:#DCDCAA"> main</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">():</span></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">    async</span><span style="color:#CF222E;--shiki-dark:#C586C0"> with</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> GnaniTTSRealtimeClient(</span><span style="color:#953800;--shiki-dark:#9CDCFE">api_key</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;your-api-key&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">) </span><span style="color:#CF222E;--shiki-dark:#C586C0">as</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> client:</span></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">        with</span><span style="color:#0550AE;--shiki-dark:#DCDCAA"> open</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;output.wav&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;wb&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">) </span><span style="color:#CF222E;--shiki-dark:#C586C0">as</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> f:</span></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">            async</span><span style="color:#CF222E;--shiki-dark:#C586C0"> for</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> chunk </span><span style="color:#CF222E;--shiki-dark:#C586C0">in</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> client.synthesize(</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">                &quot;नमस्ते, आप कैसे हैं?&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#953800;--shiki-dark:#9CDCFE">                voice</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;Nalini&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#953800;--shiki-dark:#9CDCFE">                model</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;timbre-v2.5&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#953800;--shiki-dark:#9CDCFE">                language</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;hi-IN&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">            ):</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">                f.write(chunk)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">asyncio.run(main())</span></span>
+
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">import</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> asyncio</span></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">from</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> gnani.tts </span><span style="color:#CF222E;--shiki-dark:#C586C0">import</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> GnaniTTSRealtimeClient</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#569CD6">async</span><span style="color:#CF222E;--shiki-dark:#569CD6"> def</span><span style="color:#8250DF;--shiki-dark:#DCDCAA"> main</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">():</span></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">    async</span><span style="color:#CF222E;--shiki-dark:#C586C0"> with</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> GnaniTTSRealtimeClient(</span><span style="color:#953800;--shiki-dark:#9CDCFE">api_key</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;your-api-key&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">) </span><span style="color:#CF222E;--shiki-dark:#C586C0">as</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> client:</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">        audio </span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#CF222E;--shiki-dark:#C586C0"> await</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> client.synthesize_and_collect(</span></span>
+<span class="line"><span style="color:#0A3069;--shiki-dark:#CE9178">            &quot;नमस्ते, आप कैसे हैं?&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#953800;--shiki-dark:#9CDCFE">            voice</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;Nalini&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#953800;--shiki-dark:#9CDCFE">            model</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;timbre-v2.5&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#953800;--shiki-dark:#9CDCFE">            language</span><span style="color:#CF222E;--shiki-dark:#D4D4D4">=</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;hi-IN&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">        )</span></span>
+<span class="line"><span style="color:#CF222E;--shiki-dark:#C586C0">        with</span><span style="color:#0550AE;--shiki-dark:#DCDCAA"> open</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">(</span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;output.wav&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">, </span><span style="color:#0A3069;--shiki-dark:#CE9178">&quot;wb&quot;</span><span style="color:#1F2328;--shiki-dark:#D4D4D4">) </span><span style="color:#CF222E;--shiki-dark:#C586C0">as</span><span style="color:#1F2328;--shiki-dark:#D4D4D4"> f:</span></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">            f.write(audio)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#1F2328;--shiki-dark:#D4D4D4">asyncio.run(main())</span></span>

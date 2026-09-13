@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 
-export function useVoiceGuidance(guidance, isVoiceActive) {
+export function useVoiceGuidance(guidance, isVoiceActive, voice = 'Nalini', language = 'hi-IN') {
 	const audioRef = useRef(null)
 
 	useEffect(() => {
@@ -13,19 +13,32 @@ export function useVoiceGuidance(guidance, isVoiceActive) {
 
 		const fetchTTS = async () => {
 			try {
-				const response = await fetch('https://api.gnani.ai/tts', {
+				const response = await fetch('https://api.vachana.ai/api/v1/tts/inference', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json',
-						'gnani-apikey': process.env.NEXT_PUBLIC_GNANI_API_KEY
+						'X-API-Key-ID': process.env.NEXT_PUBLIC_GNANI_API_KEY
 					},
-					body: JSON.stringify({ text: textToSpeak })
+					body: JSON.stringify({
+						text: textToSpeak,
+						voice: voice,
+						model: 'timbre-v2.5',
+						language: language,
+						speed: 1.0,
+						audio_config: {
+							encoding: 'linear_pcm',
+							container: 'wav',
+							num_channels: 1,
+							sample_rate: 48000,
+							sample_width: 2
+						}
+					})
 				})
 
 				if (!response.ok) throw new Error('Gnani TTS error')
 
 				const arrayBuffer = await response.arrayBuffer()
-				const blob = new Blob([arrayBuffer], { type: 'audio/mpeg' })
+				const blob = new Blob([arrayBuffer], { type: 'audio/wav' })
 				const url = URL.createObjectURL(blob)
 
 				if (audioRef.current) {
@@ -55,5 +68,5 @@ export function useVoiceGuidance(guidance, isVoiceActive) {
 				}
 			}
 		}
-	}, [guidance, isVoiceActive])
+	}, [guidance, isVoiceActive, voice, language])
 }
